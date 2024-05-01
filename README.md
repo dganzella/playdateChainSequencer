@@ -8,7 +8,9 @@ May provide a more straightforward way of programming than using playdate's time
 The usage is very simple. There are only 3 types of actions: Delay, Call and Progress
 
 **Delay** is used to add a time delay to the chain
+
 **Call** is used to call a generic function
+
 **Progress** will provide a 0 to 1 value, both toal accumulated and the difference on the last update, with any curve provided
 
 By chaining these in an array, you can then create a **sequencer**.
