@@ -11,7 +11,7 @@ The usage is very simple. There are only 3 types of actions: Delay, Call and Pro
 
 **Call** is used to call a generic function
 
-**Progress** will provide a 0 to 1 value, both toal accumulated and the difference on the last update, with any curve provided
+**Progress** will provide a 0 to 1 value over time, both total accumulated and the difference on the last update, with any easing curve
 
 By chaining these in an array, you can then create a **sequencer**.
 
