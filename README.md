@@ -13,9 +13,7 @@ The usage is very simple. There are only 3 types of actions: Delay, Call and Pro
 
 **Progress** will provide a 0 to 1 value over time, both total accumulated and the difference on the last update, with any easing curve
 
-By chaining these in an array, you can then create a **sequencer**.
-
-The chain can also be constructed by using for loops and appending actions
+By chaining these in an array, line by line or using for loops, you can then create a **sequencer**.
 
 Then you add the sequencer to the **SequenceManager**, and assign to an owner and optionally give it an ID.
 
