@@ -5,7 +5,7 @@ May provide a more straightforward way of programming than using playdate's time
 
 ## how it works
 
-The usage is very simple. There are only 3 types of actions: Delay, Call and Progress
+The usage is very simple. There are only 3 types of **Actions**: Delay, Call and Progress
 
 **Delay** is used to add a time delay to the chain
 
@@ -13,7 +13,7 @@ The usage is very simple. There are only 3 types of actions: Delay, Call and Pro
 
 **Progress** will provide a 0 to 1 value over time, both total accumulated and the difference on the last update, with any easing curve
 
-By chaining these in an array, line by line or using for loops, you can then create a **sequencer**.
+By chaining **Actions** in an array, either line by line or using for loops, you can then create a **sequencer**.
 
 Then you add the sequencer to the **SequenceManager**, and assign to an owner and optionally give it an ID.
 
