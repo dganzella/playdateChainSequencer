@@ -75,7 +75,6 @@ end
 
 ```lua
 ---@class sequenceManager
----@field sequenceMap table< string, table< string, sequencer > >
 ---@field addSequencer fun(self: sequenceManager, sequencer: sequencer, ownerId: string, sequencerId: string? )
 ---@field clearSequencer fun(self: sequenceManager, ownerId: string , sequencerId: string )
 ---@field clearAllSequencersOfOwner fun(self: sequenceManager, ownerId: string )
@@ -85,5 +84,4 @@ end
 ---@field resumeAllSequencesOfOwner fun(self: sequenceManager, ownerId: string )
 ---@field pauseSequencer fun(self: sequenceManager, ownerId: string, sequencerId: string  )
 ---@field resumeSequencer fun(self: sequenceManager, ownerId: string, sequencerId: string  )
----@field processOwner fun(self: sequenceManager, seqs: table<string, sequencer> )
 ```
