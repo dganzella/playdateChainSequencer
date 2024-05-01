@@ -1,5 +1,5 @@
----@enum SequenceTypes
-SequenceTypes = {
+---@enum ActionTypes
+ActionTypes = {
     Call     = 'call',
     Delay    = 'delay',
     Progress = 'progress'

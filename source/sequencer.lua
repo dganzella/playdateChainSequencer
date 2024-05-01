@@ -33,7 +33,7 @@ function sequencer:update()
 	if not self.finished and not self.paused then
 		local currAction = self.actionList[self.currIndex]
 
-		if currAction.type == SequenceTypes.Call then
+		if currAction.type == ActionTypes.Call then
 			currAction.call()
 			self:advanceAction()
 			self:update()
@@ -42,9 +42,9 @@ function sequencer:update()
 
 			local delayOrTime = 0
 
-			if currAction.type == SequenceTypes.Delay then
+			if currAction.type == ActionTypes.Delay then
 				delayOrTime = currAction.delay
-			elseif currAction.type == SequenceTypes.Progress then
+			elseif currAction.type == ActionTypes.Progress then
 				delayOrTime = currAction.progress.time
 
 				local timeMax = math.min(self.timeCountMs, delayOrTime)

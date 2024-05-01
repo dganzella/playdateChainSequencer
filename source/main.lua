@@ -3,7 +3,7 @@ import 'CoreLibs/graphics'
 import 'CoreLibs/object'
 import 'CoreLibs/sprites'
 
-import 'SequenceTypes'
+import 'ActionTypes'
 import 'sequencer'
 import 'sequenceManager'
 
@@ -19,7 +19,7 @@ seqMng = sequenceManager()
 local actionList = {}
 
 table.insert(actionList, {
-	type = SequenceTypes.Progress,
+	type = ActionTypes.Progress,
 	progress = {
 		time = 2000,
 		ease = playdate.easingFunctions.outSine,
@@ -30,17 +30,17 @@ table.insert(actionList, {
 })
 
 table.insert(actionList, {
-	type = SequenceTypes.Call,
+	type = ActionTypes.Call,
 	call = function()
 		print('will wait for 3 seconds...')
 	end
 })
 
 
-table.insert(actionList, { type = SequenceTypes.Delay, delay = 3000 })
+table.insert(actionList, { type = ActionTypes.Delay, delay = 3000 })
 
 table.insert(actionList, {
-	type = SequenceTypes.Call,
+	type = ActionTypes.Call,
 	call = function()
 		print('waited!')
 	end
