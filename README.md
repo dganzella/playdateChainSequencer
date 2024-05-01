@@ -23,7 +23,7 @@ Sequencers may also loop forever, which in that case, they require to be cleared
 
 ## installation
 
-copy ActionTypes.lua, sequencer.lua and sequenceManager.lua to your project
+copy **ActionTypes.lua**, **sequencer.lua** and **sequenceManager.lua** to your project
 
 ## basic usage
 
